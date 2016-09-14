@@ -1,0 +1,134 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Welcome to the Creepy Forest");
+		System.out.println("If you would like to stop exploring, insert \"end\".");
+		System.out.println("Would you like to go towards the abandoned \"mines\" or the haunted \"house\"?");
+		String firstCmd = keyboard.next();
+		String scndCmd = keyboard.next();
+		String thrdCmd = keyboard.next();
+		if(firstCmd.equals("mines"))
+		{
+			System.out.println("Inside the mines, you see a figure go in one direction and you see firelight in another direction. Do you \"follow\" the figure or go towards the \"fire\"?");
+			if(scndCmd.equals("follow"))
+			{
+				System.out.println("The figure is your mom wondering why you're out here late at night. Do you \"lie\" or tell the \"truth\"?");
+				if(thrdCmd.equals("lie"))
+				{
+					System.out.println("You know your mom always knows when you lie. Why would you do that? You're grounded.");
+				}
+				else if(thrdCmd.equals("truth"))
+				{
+					System.out.println("Your mom is ready to kill you for coming out to the woods to possibly get killed. Why'd you even leave the house? Stay home next time.");
+				}
+				else if(thrdCmd.equals("end"))
+				{
+					System.out.println("Thank you for visiting the Creepy Forest");
+				}
+				else
+				{
+					System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+				}
+				
+			}
+			else if(scndCmd.equals("fire"))
+			{
+				System.out.println("There's some kind of ritual going on around the fire. Looks creepy. Do you want to \"stay\" or \"run\" away?");
+				if(thrdCmd.equals("stay"))
+				{
+					System.out.println("You are noticed by the people doing the ritual. You are now going to be their sacrifice.");
+				}
+				else if(thrdCmd.equals("run"))
+				{
+					System.out.println("You got out of there...let's just hope you weren't followed.");
+				}
+				else if(thrdCmd.equals("end"))
+				{
+					System.out.println("Thank you for visiting the Creepy Forest");
+				}
+				else
+				{
+					System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+				}
+			}
+			else if(scndCmd.equals("end"))
+			{
+				System.out.println("Thank you for visiting the Creepy Forest");
+			}
+			else
+			{
+				System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+			}
+		}
+		else if(firstCmd.equals("house"))
+		{
+			System.out.println("Inside the house, a door slammed \"upstairs\" and you hear the floor creak in the \"kitchen\". Where would you like to go?");
+			if(scndCmd.equals("upstairs"))
+			{
+				System.out.println("There's only one closed door. Do you \"enter\" or \"leave\" the house?");
+				if(thrdCmd.equals("enter"))
+				{
+					System.out.println("There's a ghost in the room just minding it's business. How rude of you to barge in.");
+				}
+				else if(thrdCmd.equals("leave"))
+				{
+					System.out.println("Now you'll never know what was behind the door...unless you play this game again.");
+				}
+				else if(thrdCmd.equals("end"))
+				{
+					System.out.println("Thank you for visiting the Creepy Forest");
+				}
+				else
+				{
+					System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+				}
+			}
+			else if(scndCmd.equals("kitchen"))
+			{
+				System.out.println("The kitchen door is open. Do you want to \"look\" inside or \"leave\" the house?");
+				if(thrdCmd.equals("look"))
+				{
+					System.out.println("A hungry animal is just trying to find scraps. Leave it be.");
+				}
+				else if(thrdCmd.equals("leave"))
+				{
+					System.out.println("Maybe this haunted house was more boring that people made it seem");
+				}
+				else if(thrdCmd.equals("end"))
+				{
+					System.out.println("Thank you for visiting the Creepy Forest");
+				}
+				else
+				{
+					System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+				}
+			}
+			else if(scndCmd.equals("end"))
+			{
+				System.out.println("Thank you for visiting the Creepy Forest");
+			}
+			else
+			{
+				System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+			}
+		}
+		else if(firstCmd.equals("end"))
+		{
+			System.out.println("Thank you for visiting the Creepy Forest");
+		}
+		else
+		{
+			System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
+		}
+	}
+}
