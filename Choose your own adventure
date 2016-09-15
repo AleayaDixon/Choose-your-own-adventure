@@ -130,5 +130,6 @@ class Ideone
 		{
 			System.out.println("That input is invalid. please input a word above seen in quotes or \"end\" if you are finished exploring.");
 		}
+		keyboard.close();
 	}
 }
